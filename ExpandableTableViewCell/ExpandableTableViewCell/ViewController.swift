@@ -11,11 +11,16 @@ import UIKit
 class ViewController: UITableViewController {
 
     let identifier = "CustomTableViewCell"
-    var isExpandable = false
+    let currencies = [Currency(country: "United States", name: "Doller", code: "USD", desc: "hogehogehogehogehogehoge"),
+                      Currency(country: "China", name: "yuan", code: "CNY", desc: "hogehogehogehogehogehoge"),
+                      Currency(country: "United Kingdom", name: "Pound", code: "GBP", desc: "hogehogehogehogehogehoge"),
+                      Currency(country: "Canada", name: "Canadian doller", code: "CAD", desc: "hogehogehogehogehogehoge"),
+                      Currency(country: "Brazil", name: "Real", code: "BRL", desc: "hogehogehogehogehogehoge")]
+    var expandableState = [false, false, false, false, false]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.register(CustomTableViewCell.self, forCellReuseIdentifier: identifier)
+        tableView.register(UINib(nibName: "CustomTableViewCell", bundle: nil), forCellReuseIdentifier: identifier)
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -23,28 +28,38 @@ class ViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return currencies.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as? CustomTableViewCell else {
             return UITableViewCell()
         }
-        cell.backgroundColor = .red
-        cell.selectionStyle = .none
+        let currency = currencies[indexPath.row]
+        cell.more.tag = indexPath.row
+        cell.more.addTarget(self, action: #selector(touchedOpenDescription(_:)), for: .touchUpInside)
+        cell.configure(with: currency)
         return cell
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if isExpandable {
+        if expandableState[indexPath.row] {
             return 200
         } else {
-            return 50
+            return 100
         }
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        isExpandable = true
+    @objc
+    func touchedOpenDescription(_ button: UIButton) {
+        if expandableState[button.tag] {
+            expandableState[button.tag] = false
+            button.isSelected = false
+        } else {
+            expandableState[button.tag] = true
+            button.isSelected = true
+        }
+
         tableView.beginUpdates()
         tableView.endUpdates()
     }
