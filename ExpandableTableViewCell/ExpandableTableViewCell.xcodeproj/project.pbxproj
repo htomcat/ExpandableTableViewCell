@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F37BBEC8202BD77A0018A0EF /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37BBEC7202BD77A0018A0EF /* Currency.swift */; };
 		F39FB6F2202AECDA0007D957 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39FB6F1202AECDA0007D957 /* AppDelegate.swift */; };
 		F39FB6F4202AECDA0007D957 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39FB6F3202AECDA0007D957 /* ViewController.swift */; };
 		F39FB6F7202AECDA0007D957 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F39FB6F5202AECDA0007D957 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F37BBEC7202BD77A0018A0EF /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		F39FB6EE202AECDA0007D957 /* ExpandableTableViewCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpandableTableViewCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F39FB6F1202AECDA0007D957 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F39FB6F3202AECDA0007D957 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				F39FB6FA202AECDA0007D957 /* LaunchScreen.storyboard */,
 				F39FB6FD202AECDA0007D957 /* Info.plist */,
 				F39FB71F202AEE760007D957 /* CustomTableViewCell.swift */,
+				F37BBEC7202BD77A0018A0EF /* Currency.swift */,
 			);
 			path = ExpandableTableViewCell;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F37BBEC8202BD77A0018A0EF /* Currency.swift in Sources */,
 				F39FB720202AEE760007D957 /* CustomTableViewCell.swift in Sources */,
 				F39FB6F4202AECDA0007D957 /* ViewController.swift in Sources */,
 				F39FB6F2202AECDA0007D957 /* AppDelegate.swift in Sources */,
