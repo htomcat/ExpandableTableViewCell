@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F37BBEC8202BD77A0018A0EF /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37BBEC7202BD77A0018A0EF /* Currency.swift */; };
+		F37BBECA202BE0C20018A0EF /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F37BBEC9202BE0C20018A0EF /* CustomTableViewCell.xib */; };
 		F39FB6F2202AECDA0007D957 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39FB6F1202AECDA0007D957 /* AppDelegate.swift */; };
 		F39FB6F4202AECDA0007D957 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39FB6F3202AECDA0007D957 /* ViewController.swift */; };
 		F39FB6F7202AECDA0007D957 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F39FB6F5202AECDA0007D957 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		F37BBEC7202BD77A0018A0EF /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		F37BBEC9202BE0C20018A0EF /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		F39FB6EE202AECDA0007D957 /* ExpandableTableViewCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpandableTableViewCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F39FB6F1202AECDA0007D957 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F39FB6F3202AECDA0007D957 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				F39FB6FD202AECDA0007D957 /* Info.plist */,
 				F39FB71F202AEE760007D957 /* CustomTableViewCell.swift */,
 				F37BBEC7202BD77A0018A0EF /* Currency.swift */,
+				F37BBEC9202BE0C20018A0EF /* CustomTableViewCell.xib */,
 			);
 			path = ExpandableTableViewCell;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 			files = (
 				F39FB6FC202AECDA0007D957 /* LaunchScreen.storyboard in Resources */,
 				F39FB6F9202AECDA0007D957 /* Assets.xcassets in Resources */,
+				F37BBECA202BE0C20018A0EF /* CustomTableViewCell.xib in Resources */,
 				F39FB6F7202AECDA0007D957 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
