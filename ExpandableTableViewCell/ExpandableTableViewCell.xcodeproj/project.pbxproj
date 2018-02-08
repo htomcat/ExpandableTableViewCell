@@ -14,6 +14,7 @@
 		F39FB6FC202AECDA0007D957 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F39FB6FA202AECDA0007D957 /* LaunchScreen.storyboard */; };
 		F39FB707202AECDA0007D957 /* ExpandableTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39FB706202AECDA0007D957 /* ExpandableTableViewCellTests.swift */; };
 		F39FB712202AECDA0007D957 /* ExpandableTableViewCellUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39FB711202AECDA0007D957 /* ExpandableTableViewCellUITests.swift */; };
+		F39FB720202AEE760007D957 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39FB71F202AEE760007D957 /* CustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		F39FB70D202AECDA0007D957 /* ExpandableTableViewCellUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpandableTableViewCellUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F39FB711202AECDA0007D957 /* ExpandableTableViewCellUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableTableViewCellUITests.swift; sourceTree = "<group>"; };
 		F39FB713202AECDA0007D957 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F39FB71F202AEE760007D957 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				F39FB6F8202AECDA0007D957 /* Assets.xcassets */,
 				F39FB6FA202AECDA0007D957 /* LaunchScreen.storyboard */,
 				F39FB6FD202AECDA0007D957 /* Info.plist */,
+				F39FB71F202AEE760007D957 /* CustomTableViewCell.swift */,
 			);
 			path = ExpandableTableViewCell;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F39FB720202AEE760007D957 /* CustomTableViewCell.swift in Sources */,
 				F39FB6F4202AECDA0007D957 /* ViewController.swift in Sources */,
 				F39FB6F2202AECDA0007D957 /* AppDelegate.swift in Sources */,
 			);
